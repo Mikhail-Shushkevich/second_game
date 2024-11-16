@@ -1,0 +1,50 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    height: 100vh;
+}
+
+canvas {
+    border: 1px solid black; /* Для удобства визуализации границ холста */
+}
+
+.controls {
+    position: relative;
+    width: 100%;
+    height: 100px; /* Высота для кнопок */
+}
+
+button {
+    width: 100px;
+    height: 50px;
+    font-size: 16px;
+}
+
+/* Расположение кнопок */
+#leftButton {
+    position: absolute;
+    left: 10px; /* Слева */
+    bottom: 10px; /* Внизу */
+}
+
+#rightButton {
+    position: absolute;
+    right: 10px; /* Справа */
+    bottom: 10px; /* Внизу */
+}
+
+#jumpButton {
+    position: absolute;
+    top: 10px; /* Сверху */
+    left: 50%; /* Центрируем по горизонтали */
+    transform: translateX(-50%); /* Коррекция по центру */
+}
+
+#fireButton {
+    position: absolute;
+    left: 50%; /* Центрируем по горизонтали */
+    bottom: -20px; /* Внизу */
+    transform: translateX(-50%); /* Коррекция по центру */
+}
